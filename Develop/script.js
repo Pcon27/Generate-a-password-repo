@@ -1,3 +1,22 @@
+//var password.Length=()
+//var lowercase=("abcdefghijklmnopqrstuvwxyz")
+//var uppercase=("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+//var numbers=("1234567890")
+//var special=(" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~")
+
+// prompt password.Length=()
+
+// addUppercase=(true/false)
+
+// addLowercase=(true/false)
+
+// addNumber=(true/false)
+
+// addSpecial=(true/false)
+
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
