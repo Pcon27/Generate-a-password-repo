@@ -87,3 +87,5 @@ for( i=1; i<= passwordLength; i++) {
     console.log(randomChar);
 }
 
+
+}

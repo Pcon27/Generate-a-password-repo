@@ -76,10 +76,11 @@ function userLength() {
 finalChar = totalChar.length;
 console.log(finalChar);
 
-// command to generate a random character corresponding to the array
 
 // randomChar = totalChar.charAt(Math.floor(Math.random()*finalChar));
 // console.log(randomChar);
+
+// command to create random password using for loop that ends when it reaches intnded length
 
 password= "";
 
