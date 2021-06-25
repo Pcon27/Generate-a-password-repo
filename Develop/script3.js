@@ -29,7 +29,7 @@ function userLength() {
         alert("please enter a whole number between 8-128")
         return
     }
-// if integer between 8-128 was inputted user asked if they want upper case 
+// method to check if integer between 8-128 was inputted user asked if they want upper case 
     else {
         passwordLength = (Number(userInput));
         userUppercase=confirm("would you like to have UpperCase letters?") 
