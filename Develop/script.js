@@ -31,4 +31,24 @@ else if (Number(userInput) >= 129 || Number(userInput)<= 7 ) {
     return
 }
 
+// method to check if integer between 8-128 was inputted user asked if they want upper case 
+else {
+  passwordLength = (Number(userInput));
+  userUppercase=confirm("would you like to have UpperCase letters?") 
+};
+
+// method to ask user if they want numbers
+if (userUppercase) {
+  totalChar = lower.concat(upper);
+  userNumbers=confirm("would you like to have numbers?");
+  // console.log(totalChar);
+}
+
+else {
+  totalChar = lower;
+  userNumbers=confirm("would you like to have numbers?");
+  // console.log(totalChar)
+};
+
+
 }
