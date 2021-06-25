@@ -1,4 +1,6 @@
 // Variables
+var password
+var randomChar
 var userInput
 var totalChar
 var finalChar
@@ -67,20 +69,28 @@ function userLength() {
         console.log(totalChar);
     }
 
-// command to generate random password from string wanted
+// command to generate a number of the total caracters to choose from from the user's preferences
 
 finalChar = totalChar.length;
 console.log(finalChar);
 
+// command to generate a random character corresponding to the array
 
+// randomChar = totalChar.charAt(Math.floor(Math.random()*finalChar));
+// console.log(randomChar);
 
+password= "";
+
+for( i=1; i<= passwordLength; i++) {
+    password += totalChar.charAt(Math.floor(Math.random()*finalChar));
+    console.log(randomChar);
 }
-    
-    
 
+console.log(password);
 
+alert(password);
+}
 
 //         userNumbers=confirm("would you like to have numbers?");
 
 //     userSpecial=confirm("would you like to have special charaters?");
-// }
