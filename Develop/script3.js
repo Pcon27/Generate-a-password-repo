@@ -1,47 +1,65 @@
-
+var userInput
+var totalChar
 var passwordLength
 var userNumbers
 var userLowercase
 var userUppercase
 var userSpecial
-var lowercase = ("abcdefghijklmnopqrstuvwxyz")
-var uppercase= ("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-var numbers= ("1234567890")
+var lower=("abcdefghijklmnopqrstuvwxyz")
+var upper=("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+var numbers=("1234567890")
+var special=(" !$%&'()*+,-./:;<=>?@[\]^_`{|}~#")
 
-
-
-function userLength() {{
-    passwordLength = prompt("how many characters would you like in your password? (must be between 8-128");
-    console.log(passwordLength)}{
-    }
-    if (passwordLength >=8 && passwordLength<=128 ) {
+function userLength() { 
+    userInput = prompt("how many characters would you like in your password? (must be between 8-128");
+    console.log(userInput);
     
-     
+    
+    if (Number(userInput) - parseInt(userInput) !==0) {
+        alert("please enter a number between 8-128")
+    }
+
+    else if (Number(userInput) >= 129 || Number(userInput)<= 7 ) {
+        alert("please enter a number between 8-128")
+    }
+
+    else {
+        passwordLength = (Number(userInput));
+        userUppercase=confirm("would you like to have UpperCase letters?") 
+    };
+        
+    if (userUppercase) {
+        totalChar = lower.concat(upper);
+        userNumbers=confirm("would you like to have numbers?");
+        console.log(totalChar);
+    }
+    
+    else {
+        totalChar = lower;
+        userNumbers=confirm("would you like to have numbers?");
+        console.log(totalChar)
+    };
+    
+    if (userNumbers) {
+        totalChar = totalChar.concat(numbers);
+        userSpecial=confirm("would you like to have special characters");
+        console.log(totalChar);
+    }
+    
+    else {
+        totalChar = totalChar;
+        userSpecial=confirm("would you like to have special characters");
+        console.log(totalChar)
     };
 
+    if ()
+}
+    
+    
 
 
 
-function Numbers() {
-    userNumbers = confirm("would you like numbers in your password?") 
-      }
+//         userNumbers=confirm("would you like to have numbers?");
 
-
-
-  
-
-
-
-
-// if (passwordLength >=8 && passwordLength<=128 );{
-//     userNumbers = confirm("would you like numbers in your password?") 
-//       }
-//       if (userNumbers === true); {
-//         userLowercase = confirm("would you like lower case in your password?") 
-//       }
-//       if (userLowercase === true); {
-//         userUpperrcase = confirm("would you like upper case in your password?") 
-//       }
-//       if (userUppercase === true); {
-//         userSpecial = confirm("would you like special characters in your password?") 
-//       }
+//     userSpecial=confirm("would you like to have special charaters?");
+// }
