@@ -11,7 +11,7 @@ var userUppercase
 var userSpecial
 var lower=("abcdefghijklmnopqrstuvwxyz")
 var upper=("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-var numbers=("1234567890")
+var numbers=("123456789012345678901234567890")
 var special=(" !$%&'()*+,-./:;<=>?@[\]^_`{|}~#")
 
 
