@@ -50,5 +50,28 @@ else {
   // console.log(totalChar)
 };
 
+//method to ask user if they want special characters and update character string accordingly
+if (userNumbers) {
+  totalChar = totalChar.concat(numbers);
+  userSpecial=confirm("would you like to have special characters");
+  // console.log(totalChar);
+}
+
+else {
+  totalChar = totalChar;
+  userSpecial=confirm("would you like to have special characters");
+  // console.log(totalChar)
+};
+
+if (userSpecial) {
+  totalChar = totalChar.concat(special);
+  console.log(totalChar);
+}
+
+else {
+  totalChar = totalChar;
+  console.log(totalChar);
+}
+
 
 }
