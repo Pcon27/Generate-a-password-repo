@@ -78,5 +78,12 @@ else {
 finalChar = totalChar.length;
 console.log(finalChar);
 
+// command to create random password using for loop that ends when it reaches intnded length
 
+password= "";
+
+for( i=1; i<= passwordLength; i++) {
+    password += totalChar.charAt(Math.floor(Math.random()*finalChar));
+    console.log(randomChar);
 }
+
