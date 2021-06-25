@@ -73,5 +73,10 @@ else {
   console.log(totalChar);
 }
 
+// command to generate the number of total caracters to choose from on the user's preferences
+
+finalChar = totalChar.length;
+console.log(finalChar);
+
 
 }
