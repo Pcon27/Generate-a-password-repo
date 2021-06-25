@@ -22,10 +22,12 @@ function userLength() {
 //method to check if integer between 8-128 was inputted
     if (Number(userInput) - parseInt(userInput) !==0) {
         alert("please enter a number between 8-128")
+        return
     }
 
     else if (Number(userInput) >= 129 || Number(userInput)<= 7 ) {
-        alert("please enter a number between 8-128")
+        alert("please enter a whole number between 8-128")
+        return
     }
 // if integer between 8-128 was inputted user asked if they want upper case 
     else {
@@ -86,9 +88,10 @@ for( i=1; i<= passwordLength; i++) {
     console.log(randomChar);
 }
 
-console.log(password);
+console.log("your password is" + password);
 
-alert(password);
+alert("your password is: " +password);
+
 }
 
 //         userNumbers=confirm("would you like to have numbers?");
