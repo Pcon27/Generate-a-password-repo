@@ -88,12 +88,10 @@ for( i=1; i<= passwordLength; i++) {
     console.log(randomChar);
 }
 
+// created an alert to the password to display
+
 console.log("your password is" + password);
 
 alert("your password is: " +password);
 
 }
-
-//         userNumbers=confirm("would you like to have numbers?");
-
-//     userSpecial=confirm("would you like to have special charaters?");
