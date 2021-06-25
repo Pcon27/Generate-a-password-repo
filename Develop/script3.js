@@ -1,6 +1,7 @@
 // Variables
 var userInput
 var totalChar
+var finalChar
 var passwordLength
 var userNumbers
 var userLowercase
@@ -34,26 +35,26 @@ function userLength() {
     if (userUppercase) {
         totalChar = lower.concat(upper);
         userNumbers=confirm("would you like to have numbers?");
-        console.log(totalChar);
+        // console.log(totalChar);
     }
     
     else {
         totalChar = lower;
         userNumbers=confirm("would you like to have numbers?");
-        console.log(totalChar)
+        // console.log(totalChar)
     };
 
 //user asked if they want special characters
     if (userNumbers) {
         totalChar = totalChar.concat(numbers);
         userSpecial=confirm("would you like to have special characters");
-        console.log(totalChar);
+        // console.log(totalChar);
     }
     
     else {
         totalChar = totalChar;
         userSpecial=confirm("would you like to have special characters");
-        console.log(totalChar)
+        // console.log(totalChar)
     };
 
     if (userSpecial) {
@@ -65,6 +66,14 @@ function userLength() {
         totalChar = totalChar;
         console.log(totalChar);
     }
+
+// command to generate random password from string wanted
+
+finalChar = totalChar.length;
+console.log(finalChar);
+
+
+
 }
     
     
