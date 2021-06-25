@@ -87,5 +87,10 @@ for( i=1; i<= passwordLength; i++) {
     console.log(randomChar);
 }
 
+//alert for the password to display
+
+console.log("your password is" + password);
+
+alert("your password is: " +password);
 
 }
